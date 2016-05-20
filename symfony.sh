@@ -11,4 +11,4 @@ sudo yum --enablerepo=remi-php56 -y install composer
 sudo yum install -y git
 sudo yum install -y patch
 
-sudo sed -i 's/;date.timezone =/date.timezone = "Europe/Paris"/' /etc/php.ini
+sudo sed -i 's,;date.timezone =,date.timezone = "Europe/Paris",' /etc/php.ini
