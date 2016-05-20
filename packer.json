@@ -23,8 +23,7 @@
           "{{.Name}}",
           "--cpus",
           "2"
-        ]
-      ],
+        ]      ],
       "http_directory": ".",
       "boot_command": [
         "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks.cfg<enter>"
@@ -48,7 +47,8 @@
     {
       "type": "vagrant",
       "compression_level": 9,
-      "output": "centos7php55symfony.box"
+        "output": "centos7php55symfony.box",
+         "vagrantfile_template": "vagrantfile.template"
     }
   ]
 }
