@@ -37,7 +37,8 @@
       "type": "shell",
       "scripts": [
         "vagrant.sh",
-        "virtualbox.sh",
+          "virtualbox.sh",
+          "symfony.sh",
         "cleanup.sh"
       ],
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'"
